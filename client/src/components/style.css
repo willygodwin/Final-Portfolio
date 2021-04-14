@@ -10,7 +10,10 @@ body {
 
 nav {
     color:black;
-    background-color:  #17a3b8e1;
+    /* background-color:  #17a3b8e1; */
+    /* background-color:  #17a3b800; */
+    transition: all 2s;
+
 }
 
 .linkedin{

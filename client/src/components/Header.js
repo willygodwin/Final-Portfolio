@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import{ Navbar, Nav, Button, NavDropdown}  from "react-bootstrap";
 import "./style.css";
+// import linkedin from "../../assets/images/linkedin.png"
 
 
 function Header() {
@@ -8,10 +9,34 @@ function Header() {
     const toggleMenu = () => {
         return 
     }
+    const [scrollPosition, setScrollPosition] = useState(0)
+    const [navColour, setNavColour] = useState("#17a3b8e1")
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
+  
+      
+  };
+  
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      console.log(scrollPosition)
+  
+      
+      if(scrollPosition > 2){
+        setNavColour("#17a3b8e1")
+        
+  
+      } else {
+        setNavColour("#17a3b800")
+          
+      }
+      console.log(navColour)
+  }, [scrollPosition, navColour]);
 
     return (
 
-    <nav className="navbar navbar-expand-lg" >
+    <nav className="navbar navbar-expand-lg" style={{backgroundColor: navColour}} >
       {/* <div style={{display: 'flex', flexDirection :'row' } > */}
         <div style={{display: 'flex', flexDirection :'row', justifyContent: "space-between" , alignItems: "center"}} >
             <div className="d-flex" style={{display: 'flex', flexDirection :'column'}}>
@@ -21,7 +46,7 @@ function Header() {
             <div>
                 <ul className="navbar-nav" style={{display: 'flex', flexDirection :'row', justifyContent: "space-evenly"}}>
                     <li className="nav-item">
-                    <a className="nav-link" href="https://www.linkedin.com/in/will-godwin-341a9aa6/" target="_blank"><img className="linkedin" src="assets/images/linkedin.png" alt="Linkedin"/><span className="sr-only"></span></a>
+                    <a className="nav-link" href="https://www.linkedin.com/in/will-godwin-341a9aa6/" target="_blank"><img className="linkedin" src="/assets/images/linkedin.png" alt="Linkedin"/><span className="sr-only"></span></a>
                             <div className="tooltipnavtext">Linkedin</div>
                     </li>
                     <li className="nav-item">
