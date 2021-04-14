@@ -6,14 +6,39 @@ a {
 
 body {
     font-family: monospace ;
+    
 }
 
-nav {
-    color:black;
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+
+    
+    /* background: rgba(255, 250, 250, 0); */
+    color: black;
     /* background-color:  #17a3b8e1; */
     /* background-color:  #17a3b800; */
     transition: all 2s;
+    /* background-image: url("../ksgNav.jpg"); */
+    /* background-size: cover; */
+    background-position: top center;
+    background-attachment: fixed;
+    
+}
 
+.navbar-container{
+    width: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+  
+
+}
+
+h2{
+    color: black
 }
 
 .linkedin{
@@ -81,4 +106,44 @@ ul{
     visibility: visible;
   }
   
-  
+
+  /* .back-ground-image {
+    background-image: url("../ksg.jpg");
+    
+    background-position: top center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+
+    overflow-x: hidden;
+}
+
+.back-ground-image-container{
+    position: relative;
+    top: 0;
+    display: block;
+    width: 100vw;
+    height: 350px;
+    min-height: 350px;
+    overflow-x: hidden;
+    z-index: 0;
+
+}
+
+.back-ground-image-cover{
+    background-color:  rgba(255, 250, 250, 0.74);
+    
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+
+    background-color: rgba(255, 250, 250, 0.74);
+    
+} */

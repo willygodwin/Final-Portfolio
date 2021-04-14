@@ -1,20 +1,17 @@
 import React, { useState, useEffect } from "react";
 // import{ Navbar, Nav, Button, NavDropdown}  from "react-bootstrap";
 import "./style.css";
+import ksgNav from "../ksgNav.jpg"
 // import linkedin from "../../assets/images/linkedin.png"
 
 
 function Header() {
 
-    const toggleMenu = () => {
-        return 
-    }
     const [scrollPosition, setScrollPosition] = useState(0)
-    const [navColour, setNavColour] = useState("#17a3b8e1")
+    const [navColour, setNavColour] = useState("")
     const handleScroll = () => {
       const position = window.scrollY;
       setScrollPosition(position);
-  
       
   };
   
@@ -22,25 +19,21 @@ function Header() {
       window.addEventListener('scroll', handleScroll, { passive: true });
       console.log(scrollPosition)
   
-      
       if(scrollPosition > 2){
-        setNavColour("#17a3b8e1")
-        
-  
+        setNavColour(ksgNav) 
       } else {
-        setNavColour("#17a3b800")
-          
+        setNavColour("") 
       }
       console.log(navColour)
-  }, [scrollPosition, navColour]);
+    }, [scrollPosition, navColour]);
 
     return (
 
-    <nav className="navbar navbar-expand-lg" style={{backgroundColor: navColour}} >
+    <nav className="navbar" style={{backgroundImage: "url(" + "ksgNav" + ")"}} >
       {/* <div style={{display: 'flex', flexDirection :'row' } > */}
-        <div style={{display: 'flex', flexDirection :'row', justifyContent: "space-between" , alignItems: "center"}} >
+        <div className="navbar-container" style={{display: 'flex', flexDirection :'row', justifyContent: "space-between" , alignItems: "center"}} >
             <div className="d-flex" style={{display: 'flex', flexDirection :'column'}}>
-                    <a className="navbar-brand" href="index.html">Will Godwin</a>
+                    <a className="navbar-brand" href="index.html"><h1>Will Godwin</h1></a>
                 <span>Web Developer</span>
             </div>
             <div>
@@ -50,15 +43,21 @@ function Header() {
                             <div className="tooltipnavtext">Linkedin</div>
                     </li>
                     <li className="nav-item">
-                            <a className="nav-link" href="https://github.com/willygodwin" target="_blank"><img className="github" src="assets/images/github.png" alt="Github"/><span className="sr-only"></span></a>
+                            <a className="nav-link" href="https://github.com/willygodwin" target="_blank"><img className="github" src="/assets/images/github.png" alt="Github"/><span className="sr-only"></span></a>
                             <div className="tooltipnavtext">Github</div>
                         </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="assets/images/WillGodwinResume1.pdf" download><img className="resume" src="assets/images/resume.png" alt="Resume"/><span className="sr-only"></span></a>
+                        <a className="nav-link" href="assets/images/WillGodwinResume1.pdf" download><img className="resume" src="/assets/images/resume.png" alt="Resume"/><span className="sr-only"></span></a>
                         <div className="tooltipnavtext">Resume</div>
                     </li>
                 </ul>
             </div>
+        </div>
+
+        <div class= "back-ground-image-container">
+        <div class="back-ground-image">
+            <div class="back-ground-image-cover"></div>
+        </div>
         </div>
 
         {/* <div className="collapse navbar-collapse" id="navbarSupportedContent">
