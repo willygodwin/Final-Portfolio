@@ -1,0 +1,22 @@
+
+
+
+  .tooltipnavtext{
+    visibility: hidden;
+    
+    background-color: #f7bc78dc;
+    color: #fff;
+    
+    border-radius: 6px;
+    padding: 5px 5px;
+    width: auto;
+
+    
+    z-index: 1;
+
+  }
+
+  .project-div:hover .tooltipnavtext {
+    visibility: visible;
+  }
+  
