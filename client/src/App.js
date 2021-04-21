@@ -1,40 +1,65 @@
 import React, {useState, useEffect, Component } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import 'bootstrap/dist/css/bootstrap.css';
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header/Header";
-import SimpleContainer from "./components/SimpleContainer/Container";
-import Seperator from "./components/Seperator/Seperator"
-import SectionContainer from "./components/SectionContainer/SectionContainer";
-import RainbowTitle from "./components/RainbowTitle/RainbowTitle";
-import Portfolio from "./components/Portfolio/Portfolio";
-import ProjectTileData from './components/ProjectTileData/ProjectTileData';
+import ProjectInfoData from './components/ProjectInfoData/ProjectInfoData'
+
 import HomeworkTileData from './components/HomeworkTileData/HomeworkTileData';
 import ProjectPage from "./pages/ProjectPage";
+import HomePage from "./pages/HomePage";
 
 
 function App() {
+  
+  const data = ProjectInfoData()
+
   return (
     <div className="App">
       
       <Header/>
       
+      <BrowserRouter>
+      <div>
+        <Switch>
+          <Route exact path="/">
+            <HomePage/>
+          </Route>
+          <Route exact path="/passwordgen">
+            <ProjectPage {...data.passGen}/>
+          </Route>
+          <Route exact path="/jiffy">
+            <ProjectPage {...data.jiffy}/>
+          </Route>
+          <Route exact path="/recibits">
+            <ProjectPage {...data.recibits}/>
+          </Route>
+          <Route exact path="/notetaker">
+            <ProjectPage {...data.noteTaker}/>
+          </Route>
+          <Route exact path="/dailyplanner">
+            <ProjectPage {...data.dayPlanner}/>
+          </Route>
+          <Route exact path="/codingquiz">
+            <ProjectPage {...data.codingQuiz}/>
+          </Route>
+          <Route exact path="/eat-da-burger">
+            <ProjectPage {...data.eatDaBurger}/>
+          </Route>
+          <Route exact path="/weatherdashboard">
+            <ProjectPage {...data.weatherDashboard}/>
+          </Route>
 
+  
+        </Switch>
+      </div>
+      </BrowserRouter>
+    );
+  
         
-          <SectionContainer>
-            <img style={{height:'100vh', width:'100%', zIndex:'0', position:'absolute'}} src="/assets/images/coverphoto.JPG"></img>
-            <RainbowTitle></RainbowTitle>
-          </SectionContainer>
-       
-          <Seperator/>
-          <SectionContainer>
-            <SimpleContainer></SimpleContainer>
-          </SectionContainer>
-          <SectionContainer>
-            <Portfolio tileData={ProjectTileData} title='Major Projects'></Portfolio>
-            
-          </SectionContainer>
-    <ProjectPage></ProjectPage>
+          
+    
      
     
     </div>

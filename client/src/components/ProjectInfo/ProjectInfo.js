@@ -2,6 +2,7 @@ import React from "react";
 import Screenshot from '../Screenshot/Screenshot'
 
 function ProjectInfo(props){
+    console.log("letss goooo", props)
     return(
     <div>
         <h4>{props.title}</h4>

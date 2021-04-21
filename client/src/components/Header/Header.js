@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import{ Navbar, Nav, Button, NavDropdown}  from "react-bootstrap";
 import "./style.css";
 import ksgNav from "../../ksgNav.jpg"
 import Grid from '@material-ui/core/Grid';
@@ -36,7 +35,7 @@ function Header() {
         </Grid>
         <Grid item xs={2}>
           <div className="d-flex" style={{display: 'flex', flexDirection :'column'}}>
-              <a className="navbar-brand" href="index.html"><h1>Will Godwin</h1></a>
+              <a className="navbar-brand" href="/"><h1>Will Godwin</h1></a>
               <span>Web Developer</span>
           </div>
         </Grid>
