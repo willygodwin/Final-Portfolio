@@ -10,6 +10,7 @@ import RainbowTitle from "./components/RainbowTitle/RainbowTitle";
 import Portfolio from "./components/Portfolio/Portfolio";
 import ProjectTileData from './components/ProjectTileData/ProjectTileData';
 import HomeworkTileData from './components/HomeworkTileData/HomeworkTileData';
+import ProjectPage from "./pages/ProjectPage";
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
             <Portfolio tileData={ProjectTileData} title='Major Projects'></Portfolio>
             
           </SectionContainer>
-
+    <ProjectPage></ProjectPage>
      
     
     </div>

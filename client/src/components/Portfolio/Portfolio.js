@@ -47,6 +47,7 @@ const useStyles = makeStyles((theme) => ({
         {
             title: 'Project 2 - Jiffy',
             imageSrc: "/assets/images/jiffy-6.png",
+            urlSrc: "/jiffy",
             width: '15%',
             height: '15%', 
             top: '10%',
@@ -57,6 +58,7 @@ const useStyles = makeStyles((theme) => ({
         {
             title: 'Project 1 - Recitbits',
             imageSrc: "/assets/images/recibits.jpeg",
+            urlSrc: "/recibits",
             width: '15%',
             height: '15%', 
             top: '60%',
@@ -67,6 +69,7 @@ const useStyles = makeStyles((theme) => ({
         {
             title: 'Note Taker',
             imageSrc: "/assets/images/postit.png",
+            urlSrc: "/notetaker",
             width: '50px',
             height: '50px', 
             top: '10%',
@@ -77,6 +80,7 @@ const useStyles = makeStyles((theme) => ({
         {
             title: 'Daily Planner',
             imageSrc: "/assets/images/clock.png",
+            urlSrc: "/dailyplanner",
             width: '50px',
             height: '50px', 
             top: '20%',
@@ -87,6 +91,7 @@ const useStyles = makeStyles((theme) => ({
         {
             title: 'Coding Quiz',
             imageSrc: "/assets/images/nerd.png",
+            urlSrc: "/codingquiz",
             width: '50px',
             height: '50px', 
             top: '22%',
@@ -97,6 +102,7 @@ const useStyles = makeStyles((theme) => ({
         {
             title: 'Eat-Da-Burger',
             imageSrc: "/assets/images/burgers.png",
+            urlSrc: "/eat-da-burger",
             width: '50px',
             height: '50px', 
             top: '50%',
@@ -107,6 +113,7 @@ const useStyles = makeStyles((theme) => ({
         {
             title: 'Weather Dashboard',
             imageSrc: "/assets/images/sun.png",
+            urlSrc: "/weatherdashboard",
             width: '50px',
             height: '50px', 
             top: '60%',
@@ -117,6 +124,7 @@ const useStyles = makeStyles((theme) => ({
         {
             title: 'Password Generator',
             imageSrc: "/assets/images/lock.jpg",
+            urlSrc: "/passwordgen",
             width: '50px',
             height: '50px', 
             top: '62%',
@@ -130,7 +138,7 @@ const useStyles = makeStyles((theme) => ({
         <div className="portfolio">
             <h1>Projects </h1>
 
-            {data.map(data => <PortfolioImage title={data.title} src={data.imageSrc} width={data.width} height={data.height} right={data.right} top={data.top}></PortfolioImage>)}
+            {data.map(data => <PortfolioImage title={data.title} imageSrc={data.imageSrc} urlSrc={data.urlSrc} width={data.width} height={data.height} right={data.right} top={data.top}></PortfolioImage>)}
             
             {/* <div className='project-div' style={{display:'flex', justifyContent:'center' ,width:"25%", height:'25%', position:'absolute', top:'30%', right:"38%"}} >
                 <a href='/'>
