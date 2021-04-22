@@ -2,22 +2,23 @@ import React from "react";
 import Screenshot from '../Screenshot/Screenshot'
 
 function ProjectInfo(props){
-    console.log("letss goooo", props)
+    
     return(
     <div>
-        <h4>{props.title}</h4>
-        
-            <p>Description:
-                {props.description}
-            </p>
+        <h1>{props.title}</h1>
+
+        <h3>Description:</h3>
+        <p>
+            {props.description}
+        </p>
         <div className="screenshot-container">
-            Screenshots: 
+            <h3>Screenshots:</h3>
             {props.screenshots.map(screenshot => <Screenshot imageSrc={screenshot} alt={props.title}></Screenshot>)}
           
         </div>
-        <div>Deployed Application</div>
+        <h3>Deployed Application</h3>
         <a href={props.deployedURL} target='_blank' >Link</a>
-        <div>Github</div>
+        <h3>Github</h3>
         <a href={props.githubURL} target='_blank'>Link</a>
     </div>
 

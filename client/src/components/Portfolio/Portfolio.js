@@ -5,23 +5,14 @@ import PortfolioImage from '../PortfolioImage/PortfolioImage';
 
 
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      display: 'flex',
-      flexWrap: 'wrap',
-      justifyContent: 'space-around',
-      overflow: 'hidden',
-      backgroundColor: "none",
-    },
-    gridList: {
-      width: 500,
-      height: 450,
-    },
-  }));
+
+
+
 
  
 
    export default function Portfolio(props) {
+    
    
     
     const data = [
@@ -126,7 +117,7 @@ const useStyles = makeStyles((theme) => ({
     ]
 
     return (
-        <div className="portfolio">
+        <div className="portfolio" >
             <h1>Projects </h1>
 
             {data.map(data => <PortfolioImage title={data.title} imageSrc={data.imageSrc} urlSrc={data.urlSrc} width={data.width} height={data.height} right={data.right} top={data.top}></PortfolioImage>)}

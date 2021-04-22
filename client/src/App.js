@@ -1,12 +1,9 @@
-import React, {useState, useEffect, Component } from "react";
+import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import 'bootstrap/dist/css/bootstrap.css';
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header/Header";
 import ProjectInfoData from './components/ProjectInfoData/ProjectInfoData'
-
-import HomeworkTileData from './components/HomeworkTileData/HomeworkTileData';
 import ProjectPage from "./pages/ProjectPage";
 import HomePage from "./pages/HomePage";
 
@@ -55,7 +52,7 @@ function App() {
         </Switch>
       </div>
       </BrowserRouter>
-    );
+
   
         
           
