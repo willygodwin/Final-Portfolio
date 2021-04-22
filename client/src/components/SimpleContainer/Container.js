@@ -24,7 +24,7 @@ export default function CenteredGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}  className={classes.paper} >
-      <h2 >About Me</h2>
+      
         <Grid item xs={2}>
         </Grid>
         <Grid item xs={8} style={{textAlign:'left'}}>
@@ -34,6 +34,7 @@ export default function CenteredGrid() {
 
                 </Grid>
                 <Grid item xs={8}>
+                <h2 >About Me</h2>
                     
                 </Grid>
             </Grid>

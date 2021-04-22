@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import "./style.css";
 import PortfolioImage from '../PortfolioImage/PortfolioImage';
+import Grid from '@material-ui/core/Grid';
 
 
 
@@ -39,10 +40,10 @@ import PortfolioImage from '../PortfolioImage/PortfolioImage';
         }, 
         {
             title: 'Project 1 - Recitbits',
-            imageSrc: "/assets/images/recibits.jpeg",
+            imageSrc: "/assets/images/recibits.png",
             urlSrc: "/recibits",
             width: '15%',
-            height: '15%', 
+            height: '25%', 
             top: '60%',
             right: '63%',
             borderRadius: '100%'
@@ -118,7 +119,24 @@ import PortfolioImage from '../PortfolioImage/PortfolioImage';
 
     return (
         <div className="portfolio" >
-            <h1>Projects </h1>
+            <Grid container spacing={3} >
+      
+                <Grid item xs={2}>
+                </Grid>
+                <Grid item xs={8} style={{textAlign:'left'}}>
+                    {/* <Paper  className={classes.paper} style={{textAlign:'left', backgroundColor:'#ffffff00'}}> */}
+                        <Grid container spacing={3}> 
+                            <Grid item xs={4}>
+
+                            </Grid>
+                            <Grid item xs={8}>
+                            <h2>Projects </h2>
+                                
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            
 
             {data.map(data => <PortfolioImage title={data.title} imageSrc={data.imageSrc} urlSrc={data.urlSrc} width={data.width} height={data.height} right={data.right} top={data.top}></PortfolioImage>)}
             
