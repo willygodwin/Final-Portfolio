@@ -29,7 +29,7 @@ import Grid from '@material-ui/core/Grid';
         }, 
         {
             title: 'Project 2 - Jiffy',
-            imageSrc: "/assets/images/jiffy-6.png",
+            imageSrc: "/assets/images/jiffy-8.png",
             urlSrc: "/jiffy",
             width: '15%',
             height: '15%', 
@@ -42,8 +42,8 @@ import Grid from '@material-ui/core/Grid';
             title: 'Project 1 - Recitbits',
             imageSrc: "/assets/images/recibits.png",
             urlSrc: "/recibits",
-            width: '15%',
-            height: '25%', 
+            width: '10%',
+            height: '20%', 
             top: '60%',
             right: '63%',
             borderRadius: '100%'
@@ -55,7 +55,7 @@ import Grid from '@material-ui/core/Grid';
             urlSrc: "/notetaker",
             width: '50px',
             height: '50px', 
-            top: '10%',
+            top: '30%',
             right: '63%',
             borderRadius: ''
 
@@ -66,8 +66,8 @@ import Grid from '@material-ui/core/Grid';
             urlSrc: "/dailyplanner",
             width: '50px',
             height: '50px', 
-            top: '20%',
-            right: '58%',
+            top: '60%',
+            right: '90%',
             borderRadius: ''
 
         }, 
@@ -77,8 +77,8 @@ import Grid from '@material-ui/core/Grid';
             urlSrc: "/codingquiz",
             width: '50px',
             height: '50px', 
-            top: '22%',
-            right: '65%',
+            top: '25%',
+            right: '80%',
             borderRadius: ''
 
         }, 
@@ -88,8 +88,8 @@ import Grid from '@material-ui/core/Grid';
             urlSrc: "/eat-da-burger",
             width: '50px',
             height: '50px', 
-            top: '50%',
-            right: '33%',
+            top: '15%',
+            right: '10%',
             borderRadius: ''
 
         }, 
@@ -99,8 +99,8 @@ import Grid from '@material-ui/core/Grid';
             urlSrc: "/weatherdashboard",
             width: '50px',
             height: '50px', 
-            top: '60%',
-            right: '28%',
+            top: '62%',
+            right: '35%',
             borderRadius: ''
 
         }, 
@@ -110,8 +110,8 @@ import Grid from '@material-ui/core/Grid';
             urlSrc: "/passwordgen",
             width: '50px',
             height: '50px', 
-            top: '62%',
-            right: '35%',
+            top: '50%',
+            right: '20%',
             borderRadius: ''
 
         }, 
