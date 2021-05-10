@@ -18,12 +18,13 @@ import Grid from '@material-ui/core/Grid';
     
     const data = [
         {
-            title: 'Project 3 - To Be Revealed',
-            imageSrc: "/assets/images/Chocolate-Rainbow-Cupcake.svg",
-            width: '25%',
-            height: '25%', 
+            title: 'Project 3 - Tombola',
+            imageSrc: "/assets/images/tombola.jpg",
+            urlSrc: "/tombola",
+            width: '20%',
+            height: 'auto', 
             top: '30%',
-            right: '38%',
+            right: '40%',
             borderRadius: ''
 
         }, 
@@ -33,14 +34,14 @@ import Grid from '@material-ui/core/Grid';
             urlSrc: "/jiffy",
             width: '15%',
             height: '15%', 
-            top: '10%',
+            top: '20%',
             right: '23%',
             borderRadius: ''
 
         }, 
         {
-            title: 'Project 1 - Recitbits',
-            imageSrc: "/assets/images/recibits.png",
+            title: 'Project 1 - Recibits',
+            imageSrc: "/assets/images/Chocolate-Rainbow-Cupcake.svg",
             urlSrc: "/recibits",
             width: '10%',
             height: '20%', 

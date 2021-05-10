@@ -47,6 +47,9 @@ function App() {
           <Route exact path="/weatherdashboard">
             <ProjectPage {...data.weatherDashboard}/>
           </Route>
+          <Route exact path="/tombola">
+            <ProjectPage {...data.tombola}/>
+          </Route>
 
   
         </Switch>

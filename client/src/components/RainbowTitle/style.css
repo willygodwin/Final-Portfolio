@@ -18,7 +18,7 @@
   }
   
   .text-copy {
-    fill: white;
+    fill: none;
     /* stroke: white; */
     z-index: 0;
     stroke-dasharray: 7% 28%;
@@ -50,7 +50,7 @@
   .text-copy:nth-child(5) {
     stroke: #17a3b8e1;
     stroke-dashoffset: 35%;
-    stroke-width: 1px;
+    /* stroke-width: 1px; */
     z-index: 1;
   }
 
