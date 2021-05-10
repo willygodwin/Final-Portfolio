@@ -112,8 +112,8 @@ function ProjectInfoData(){
             description: 'Tombola is a fun and exciting adaptation of the online marketplace. A combination of instagram, ebay and the classic raffle.  Sellers are able to raffle consumer items to the community. Buyers from the community then have a chance to win items by purchasing a percentage of these tickets. ',
             screenshots: [
                 "assets/images/tombola/tombola1.png",
-                "assets/images/tombola/tombola2.jpg",
-                "assets/images/tombola/tombola3.jpg",
+                "assets/images/tombola/tombola2.JPG",
+                "assets/images/tombola/tombola3.JPG",
                    
             ],
             deployedURL: "https://tombola-project3.herokuapp.com/",
