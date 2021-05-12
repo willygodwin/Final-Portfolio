@@ -42,7 +42,7 @@ export default function CenteredGrid() {
             <Grid container spacing={3}>
                 <Grid item xs={4}>
                     <div>
-                    <ImageAvatars src="/assets/images/headshot.jpg"/>
+                    <ImageAvatars src="/assets/images/profilepic.jpg"/>
                     <ul>
                         <li>
                             Location: Perth, Western Australia
